@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Overview of HTML</h1>
+    </header>
+    <h2>Contents:</h2>
+    <nav>
+      <a href="#heading">Heading</a><br />
+      <a href="#paragraph">Paragraph</a><br />
+      <a href="#list">List</a><br />
+      <a href="#image">Image</a><br />
+      <a href="#table">Table</a><br />
+      <a href="#form">Form</a><br />
+      <a href="#others">Others</a>
+    </nav>
+    <!-- Heading-->
+    <h1 id="heading">Heading:</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <hr />
+    <!--Paragraph-->
+    <h3 id="paragraph">Paragraph:</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quo
+      veritatis nulla maiores voluptate suscipit, quis amet! Veniam, quo et
+      officia id deleniti consectetur placeat a omnis? Ipsa, praesentium
+      dignissimos.
+    </p>
+    <hr />
+    <!--Text Formatting-->
+    <h4>Text Formatting:</h4>
+    <p>
+      This is an example of <strong>STRONG</strong>.<br />
+      This is an example of <em>emphasize</em>. This is an example of
+      <small>small</small>.<br />
+      This is an example of <sup>Superscript</sup>.<br />
+      This is an example of <sub>subscript</sub>.<br />
+      This is an example of <ins>inserted</ins> text.<br />
+      This is an example of <del>deleted</del> text.<br />
+      This is an example of <mark>Marked</mark> text.
+    </p>
+    <hr />
+    <!--List-->
+    <h3 id="list">List:</h3>
+    <!--Ordered list-->
+    <h4>Ordered List</h4>
+    <ol>
+      <li>Ordered list 1</li>
+      <li>Ordered list 2</li>
+      <li>Ordered list 3</li>
+    </ol>
+    <!--Unordered list-->
+    <h4>Unordered list</h4>
+    <ul>
+      <li>Unordered list 1</li>
+      <li>Unordered list 2</li>
+      <li>Unordered list 3</li>
+    </ul>
+    <!--Description list-->
+    <h4>Definition or Description list</h4>
+    <dl>
+      <dt>Google</dt>
+      <dd>a search engine</dd>
+    </dl>
+    <hr />
+    <!--Image-->
+    <h3 id="image">Image:</h3>
+    <img
+      src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aHRtbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      alt="Image of html tag"
+      width="250"
+      height="250"
+    />
+    <hr />
+    <!--Table-->
+    <h3 id="table">Table:</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Capital</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>India</td>
+          <td>New Delhi</td>
+        </tr>
+        <tr>
+          <td>France</td>
+          <td>Paris</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <!--Form-->
+    <form>
+      <h3 id="form">Forms:</h3>
+      <div>
+        <h4>Input types:</h4>
+        <label for="text">Text</label>
+        <input type="text" name="text" id="text" required />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <br />
+      <div>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" />
+      </div>
+      <br />
+      <div>
+        <label for="number">Number</label>
+        <input type="number" name="number" id="number" />
+      </div>
+      <br />
+      <div>
+        <label for="dropdown">Dropdown list</label>
+        <select id="dropdown">
+          <option value="List1">List 1</option>
+          <option value="List1">List 2</option>
+          <option value="List1">List 3</option>
+          <option value="List1">List 4</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label>Datalist</label>
+        <input type="text" list="food" name="food" />
+        <datalist id="food">
+          <option value="Pizza"></option>
+          <option value="Burger"></option>
+          <option value="Momo"></option>
+        </datalist>
+      </div>
+      <br />
+      <div>
+        <input type="checkbox" name="checkbox1" />
+        <label>Checkbox 1</label>
+        <input type="checkbox" name="checkbox2" />
+        <label>Checkbox 2</label><br /><br />
+        <label>Did you like this project?</label>
+        <input type="radio" name="yes" />
+        <label>Yes</label>
+        <input type="radio" name="no" />
+        <label>No</label>
+      </div>
+      <br />
+      <div>
+        <label>How much do you rate this project?</label><br />
+        <label>1</label>
+        <input type="range" name="range" />
+        <label>5</label>
+      </div>
+      <br />
+      <div>
+        <label for="textarea">Textarea</label><br />
+        <textarea id="textarea" name="text" cols="20" rows="5"></textarea>
+      </div>
+      <br />
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+    <!--Others-->
+    <h3 id="others">Others:</h3>
+    <h4>Title Attribute:</h4>
+    <p title="Hello">You can see hello text when you mouser over this line</p>
+    <h4>Abbreviation:</h4>
+    <p><abbr title="Facebook">FB</abbr></p>
+    <h4>Bi-directional Override:</h4>
+    <bdo dir="rtl">String</bdo>
+    <h4>Blockquote:</h4>
+    <blockquote cite="www.google.com">
+      The purpose of our lives is to be happy.
+    </blockquote>
+    <h4>Cite:</h4>
+    <p><cite>Think like a monk</cite> by Jay Shetty</p>
+    <h4>Address:</h4>
+    <footer>
+      <address>Name location email contact</address>
+    </footer>
+  </body>
+</html>
